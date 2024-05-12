@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>PULMONARY AILMENT CLASSIFICATION USING PHONOPNEUMOGRAPHY</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+ 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+  <link href="../static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../static/css/style1.css" rel="stylesheet">
+</head>
+
+<body>
+  <header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+      <h1 class="col-lg-8"> <span>PULMONARY AILMENT </span></h1>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="{{ url_for('first')}}">Home</a></li>
+          <li><a class="nav-link scrollto active" href="{{ url_for('login')}}">Login</a></li>
+        </ul>
+      </nav>
+     </div>
+  </header>
+      
+    
+<section id="book-a-table" class="book-a-table">
+      <div class="container" data-aos="fade-up">
+        <head>
+          <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
+        function login(){
+        var uname = document.getElementById("uname").value;
+        var pwd = document.getElementById("pwd").value;
+
+	if(uname == "admin" && pwd == "1234")
+	{
+	  alert("Login Success!");
+	  
+	  window.location = "{{url_for('index')}}";
+	  return false;
+	}
+	else
+	{
+	alert("Invalid Credentials!")
+	}
+        }
+</script>
+	
+</head>
+
+<body id="page-top">
+<section class="page-section portfolio" id="portfolio">
+ <br>
+<br>
+<div class="section-title">
+      <center> <p>Login</p></center>
+</div>
+<div class="row">
+  <div class="col-md-6 col-lg-4" style="margin-left:380px">
+    <div class="control-group">
+      <label class="control-label"   for="username"><b>Username</b></label>
+      <div class="controls">
+        <input type="text" id="uname" name="uname" placeholder="" class="form-control">
+			</div>
+			</div>
+      <div class="control-group"></br>
+			  <label class="control-label"  for="password"><b>Password</b></label>
+			    <div class="controls">
+			      <input type="password" id="pwd" name="pwd" placeholder="" class="form-control">
+			    </div>
+			</div>
+      <div class="col-md-6 col-lg-4" style="margin-left:-150px">
+			  <div class="control-group">
+			  <br>
+        <div class="controls">
+				   <input type="button" class="btn btn-success" value="Login" style="margin-left: 280px" onclick="login()">
+			  </div>
+			</div>
+		</div>
+  </div>
+</div>
+</section>
+</body>
+
+  <script src="../static/vendor/aos/aos.js"></script>
+  <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../static/vendor/php-email-form/validate.js"></script>
+  <script src="../static/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="../static/js/main.js"></script>
+
+</body>
+
+</html>
